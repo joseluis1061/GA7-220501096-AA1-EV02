@@ -3,104 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Informe Técnico - Versionamiento</title>
+  <title>Informe Técnico - Estándares de Codificación</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">Informe Técnico</div>
+      <div class="logo">Estándares de Codificación</div>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#diferencias">Diferencias</a></li>
-        <li><a href="#herramientas">Herramientas</a></li>
-        <li><a href="#seleccionada">Seleccionada</a></li>
+        <li><a href="#estandares">Estándares</a></li>
+        <li><a href="#nomenclatura">Nomenclatura</a></li>
+        <li><a href="#comentarios">Buenas Prácticas</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
     <section id="inicio" class="section">
-      <h1>GA7-220501096-AA1-EV01<br>Informe técnico de plan de trabajo para la construcción de software</h1>
+      <h1>GA7-220501096-AA1-EV02<br>Evidencia de desempeño: Estándares de codificación</h1>
       <p>
-        Las herramientas de control de versiones permiten gestionar los cambios en los archivos de un proyecto a lo largo del tiempo. 
-        Son fundamentales para el desarrollo de software, ya que permiten mantener un historial claro de modificaciones, facilitar el trabajo colaborativo 
-        y revertir errores cuando sea necesario.
-      </p>
-      <p>
-        Su uso es crucial en proyectos modernos, ya que optimizan la productividad del equipo y reducen riesgos de pérdida de información o conflictos entre versiones.
+        En esta evidencia se define el estándar de codificación que se utilizará durante el desarrollo del software. Este informe técnico tiene como propósito establecer normas claras que faciliten la legibilidad, mantenimiento y escalabilidad del código, siguiendo los principios de la programación orientada a objetos.
       </p>
     </section>
 
-    <section id="diferencias" class="section">
-      <h2>Diferencias entre versionamiento local y remoto</h2>
+    <section id="estandares" class="section">
+      <h2>Estándares de codificación según el lenguaje seleccionado</h2>
       <p>
-        El versionamiento local se limita al entorno del desarrollador, es decir, los cambios se registran y administran solo en su computadora personal. 
-        Aunque útil, no permite el trabajo colaborativo a gran escala.
+        En este proyecto se ha seleccionado <strong>Java</strong> como lenguaje principal de desarrollo. A continuación, se presentan los principales estándares que se adoptarán:
       </p>
-      <p>
-        El versionamiento remoto, por otro lado, permite almacenar el proyecto en servidores externos (como GitHub, GitLab o Bitbucket), 
-        lo que permite compartirlo, colaborar en tiempo real, mantener respaldo y trabajar desde cualquier lugar.
-      </p>
-    </section>
-
-    <section id="herramientas" class="section">
-        <h2>Herramientas de versionamiento</h2>
-        <p>A continuación, se describen algunas herramientas de control de versiones más utilizadas:</p>
-      
-        <div class="cards-container">
-      
-          <div class="card">
-            <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Logo Git" />
-            <h3>Git</h3>
-            <p>Es un sistema de control de versiones distribuido, gratuito y de código abierto. Permite el trabajo colaborativo y mantiene un historial detallado del proyecto.</p>
-          </div>
-      
-          <div class="card">
-            <img src="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" alt="Logo GitLab" />
-            <h3>GitLab</h3>
-            <p>Plataforma basada en Git que facilita la colaboración entre desarrolladores, la integración continua y la entrega continua (CI/CD).</p>
-          </div>
-      
-          <div class="card">
-            <img src="https://th.bing.com/th/id/R.f2cee6779c4f9c0223b9d30b04d547ff?rik=OmL3muu4JlH6jQ&pid=ImgRaw&r=0" alt="Logo Bitbucket" />
-            <h3>Bitbucket</h3>
-            <p>Herramienta de Atlassian que permite gestionar repositorios privados con integración a Jira. Ideal para equipos de desarrollo ágil.</p>
-          </div>
-      
-          <div class="card">
-            <img src="https://download.logo.wine/logo/Apache_Subversion/Apache_Subversion-Logo.wine.png" alt="Logo SVN" />
-            <h3>Apache Subversion (SVN)</h3>
-            <p>Sistema de control de versiones centralizado, aún usado en entornos corporativos por su simplicidad y estructura rígida.</p>
-          </div>
-      
+      <div class="cards-container">
+        <div class="card">
+          <h3>Convención de llaves</h3>
+          <p>Se usará el estilo K&R para apertura y cierre de llaves. Ejemplo:
+          <code>if (condicion) { ... }</code></p>
         </div>
-      </section>
-      
+        <div class="card">
+          <h3>Indentación</h3>
+          <p>Se utilizarán 4 espacios por nivel de indentación para mantener la claridad del bloque de código.</p>
+        </div>
+        <div class="card">
+          <h3>Espaciado</h3>
+          <p>Después de comas, operadores y palabras clave como <code>if</code>, <code>for</code>, <code>while</code>, se añadirá un espacio para mejorar la legibilidad.</p>
+        </div>
+        <div class="card">
+          <h3>Longitud de línea</h3>
+          <p>Se recomienda no superar las 100 columnas por línea. Si una línea es muy larga, se parte en varias líneas claras y lógicas.</p>
+        </div>
+      </div>
+    </section>
 
-    <section id="seleccionada" class="section">
-      <h2>Herramienta seleccionada para desarrollar</h2>
-      <p>
-        Para este proyecto se ha decidido utilizar <strong>Git</strong> como herramienta de control de versiones y <strong>GitHub</strong> como plataforma de alojamiento remoto.
-        Esta combinación ofrece una solución robusta y ampliamente utilizada en la industria.
-      </p>
-      <p>
-        <strong>Git</strong> permite trabajar de forma distribuida, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. 
-        Además, su velocidad, flexibilidad y soporte comunitario lo convierten en la mejor opción actual.
-      </p>
-      <p>
-        <strong>GitHub</strong>, por su parte, facilita la colaboración remota, el control de versiones en línea, el manejo de issues, pull requests y revisión de código entre compañeros.
-      </p>
+    <section id="nomenclatura" class="section">
+      <h2>Nomenclatura de variables, constantes, clases y métodos</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Variables</h3>
+          <p>Se usará la convención <strong>camelCase</strong>. Ejemplo: <code>numeroUsuario</code></p>
+        </div>
+        <div class="card">
+          <h3>Constantes</h3>
+          <p>Se escriben en <strong>mayúsculas con guiones bajos</strong>. Ejemplo: <code>MAX_LONGITUD</code></p>
+        </div>
+        <div class="card">
+          <h3>Clases</h3>
+          <p>Se usará <strong>PascalCase</strong> y debe ser un sustantivo representativo. Ejemplo: <code>UsuarioController</code></p>
+        </div>
+        <div class="card">
+          <h3>Métodos</h3>
+          <p>También en <strong>camelCase</strong> y deben comenzar con un verbo. Ejemplo: <code>calcularPromedio()</code></p>
+        </div>
+      </div>
+    </section>
 
+    <section id="comentarios" class="section">
+      <h2>Comentarios y buenas prácticas</h2>
+      <p>
+        Los comentarios deben ser breves, claros y colocarse solo cuando sea estrictamente necesario. Se recomienda:
+      </p>
       <ul>
-        <li>✔️ Seguimiento de cambios detallado</li>
-        <li>✔️ Trabajo colaborativo desde cualquier lugar</li>
-        <li>✔️ Integración con herramientas modernas</li>
-        <li>✔️ Facilidad de uso y documentación extensa</li>
+        <li>✔️ Comentarios en línea para aclarar lógica compleja</li>
+        <li>✔️ Comentarios de bloque para describir el propósito de clases o métodos</li>
+        <li>✔️ Uso de etiquetas <code>TODO</code> o <code>FIXME</code> para tareas pendientes</li>
       </ul>
-
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" style="width: 100px; margin-top: 20px;" />
+      <p>Ejemplo:</p>
+      <code>// Calcula el promedio de las notas ingresadas<br>public double calcularPromedio() { ... }</code>
     </section>
   </main>
 

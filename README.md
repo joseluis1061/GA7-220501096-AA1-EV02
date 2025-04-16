@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 # GA7-220501096-AA1-EV01
 Sena guía de aprendizaje GA7-220501096-AA1-EV01
+=======
+# GA7-220501096-AA1-EV02
+Sena evidencia GA7-220501096-AA1-EV02
+>>>>>>> 05b367d0a8b99f109515b819e3ef77ec9c7b905f
